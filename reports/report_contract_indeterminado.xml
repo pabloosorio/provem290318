@@ -177,7 +177,7 @@
 <template id="report_contrat_indetermindo">
     <t t-call="web.html_container">
         <t t-foreach="docs" t-as="o">
-            <t t-call="provem.report_contractindeterminate_document"/>
+            <t t-call="provem290318.report_contractindeterminate_document"/>
         </t>
     </t>
 </template>
@@ -186,9 +186,9 @@
     id="contrats_indeterminado"
     model="hr.contract"
     report_type="qweb-pdf"
-    name="provem.report_contrat_indetermindo"
-    file="provem.report_contrat_indetermindo"
-    paperformat="provem.paperformat_reportescontratosprovem2"
+    name="provem290318.report_contrat_indetermindo"
+    file="provem290318.report_contrat_indetermindo"
+    paperformat="provem290318.paperformat_reportescontratosprovem2"
     />
 
 
