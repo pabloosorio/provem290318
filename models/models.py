@@ -58,7 +58,7 @@ class hrcontract(models.Model):
     amount_to_text = fields.Char(compute='_get_amount_to_text', string='Monto en Texto', readonly=True,
                                  help='Amount of the invoice in letter', store=True)
     x_localidad = fields.Char("Localidad")
-    period_salary = fields.Selection([('semanal','Semanal'),('quincenal','Quincenal')],default='Quincenal',string="Periodo Salarial")
+    period_salary = fields.Selection([('semanal','Semanal'),('quincenal','Quincenal')],default='quincenal',string="Periodo Salarial")
     #period_salary = fields.Char(string="Periodo Salarial")
     tiempo_determinado = fields.Char('Tiempo Determinado')
 class res_partner(models.Model):
