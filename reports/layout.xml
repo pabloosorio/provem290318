@@ -21,10 +21,10 @@
         <t t-if="not o or not 'company_id' in o">
             <t t-set="company" t-value="res_company"></t>
         </t>
-        <t t-call="provem290318.report_headerdor" />
+        <t t-call="provem.report_headerdor" />
         <t t-raw="0" />
 
-        <t t-call="provem290318.report_footerdor" />
+        <t t-call="provem.report_footerdor" />
     </template>
 
 
@@ -64,7 +64,7 @@
                 <t t-set="company" t-value="res_company"></t>
             </t>
 
-            <t t-call="provem290318.report_headerdor" />
+            <t t-call="provem.report_headerdor" />
             <t t-raw="0" />
             <t t-call="report.external_layout_footer" />
 
